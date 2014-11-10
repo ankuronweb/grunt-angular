@@ -12,4 +12,4 @@ Steps to set up
 4. Run 'npm install' to install node dependencies.
 5. Run 'grunt'to produce minified, concatenated files inside dist.
 OR
-5. Run 'grunt dev' to produce debuggable code.
+Run 'grunt dev' to produce debuggable code.
