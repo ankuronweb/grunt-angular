@@ -6,7 +6,10 @@ Modular angular scaffolding for compartmentalizing your angular js application. 
 Steps to set up
 ===============
 
-1. Clone the repo.
-2. Run 'npm install' to install node dependencies.
-3. Run 'Grunt' to produce minified, concatenated files.
-4. Run 'Grunt dev' to produce debuggable code.
+1. Open Terminal.
+2. Run 'git clone https://github.com/ankuronweb/grunt-angular' to clone the repo.
+3. cd to grunt-angular folder.
+4. Run 'npm install' to install node dependencies.
+5. Run 'grunt'to produce minified, concatenated files inside dist.
+OR
+5. Run 'grunt dev' to produce debuggable code.
