@@ -3,6 +3,8 @@ grunt-angular
 
 Modular angular scaffolding for compartmentalizing your angular js application. It uses Grunt to build the directory structure on the fly.
 
+Grunt tasks read from 'src' folder and generate angular specific 'dist' folder with controllers, directives, services etc.
+
 Steps to set up
 ===============
 
