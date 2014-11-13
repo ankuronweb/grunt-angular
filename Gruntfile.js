@@ -22,7 +22,7 @@ module.exports = function(grunt) {
                 separator: ';'
             },
             controllers: {
-                src: ['app/src/js/init.js', 'app/src/js/components/**/ctrl.js'],
+                src: ['app/src/js/components/**/ctrl.js'],
                 dest: 'app/dist/js/controllers.js'
             },
             directives: {
@@ -91,7 +91,8 @@ module.exports = function(grunt) {
         copy: {
             src: {
                 files: [
-                    {expand: true, cwd: 'app/src/', src: ['**', '!css/sass/**', '!js/components/**', '!js/shared/**'], dest: 'app/dist/'}
+                    {expand: true, cwd: 'app/src/', src: ['**', '!css/sass/**', '!js/components/**', '!js/shared/**'], dest: 'app/dist/'},
+                    {expand: true, cwd: 'app/src/', flatten: true, src: ['js/components/**/*.html'], dest: 'app/dist/partials'}
                 ]
             }
         },
@@ -144,8 +145,6 @@ module.exports = function(grunt) {
     });
 
     grunt.registerTask('shared', ['clean:dist_js', 'compass', 'copy', 'concat']);
-    grunt.registerTask('jenkins-dev', ['shared', 'concat_css']);
-    grunt.registerTask('jenkins-prod', ['shared', 'uglify', 'cssmin']);
     grunt.registerTask('dev', ['shared', 'concat_css', 'watch:dev']);
     grunt.registerTask('default', ['shared', 'uglify', 'cssmin', 'watch:prod']);
 

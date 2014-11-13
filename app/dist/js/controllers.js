@@ -1,10 +1,1 @@
-angular.module('myAppControllers').controller('module1Ctrl', [function(){
-
-	// Controller logic
-}]);;angular.module('myAppControllers').controller('module2Ctrl', [function(){
-
-	// Controller logic
-}]);;angular.module('myAppControllers').controller('module3Ctrl', [function(){
-
-	// Controller logic
-}]);
+myAppControllers.controller("Module1Ctrl",[function(){}]),myAppControllers.controller("Module2Ctrl",[function(){}]),myAppControllers.controller("Module3Ctrl",[function(){}]);

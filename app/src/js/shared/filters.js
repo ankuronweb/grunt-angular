@@ -1,4 +1,4 @@
-angular.module('myAppFilters', []).filter('customFilter', function () {
+myAppFilters.filter('customFilter', function () {
     return function (customFilter) {
 
     };

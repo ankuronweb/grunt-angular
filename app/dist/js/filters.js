@@ -1,5 +1,1 @@
-angular.module('myAppFilters', []).filter('customFilter', function () {
-    return function (customFilter) {
-
-    };
-});
+myAppFilters.filter("customFilter",function(){return function(){}});

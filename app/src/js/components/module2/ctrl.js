@@ -1,4 +1,4 @@
-angular.module('myAppControllers').controller('module2Ctrl', [function(){
+myAppControllers.controller('Module2Ctrl', [function(){
 
 	// Controller logic
 }]);

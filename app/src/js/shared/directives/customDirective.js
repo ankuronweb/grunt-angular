@@ -1,4 +1,4 @@
-angular.module('myAppDirectives', []).directive( 'customDirective', [
+myAppDirectives.directive( 'customDirective', [
         function(){
         }
     ])
